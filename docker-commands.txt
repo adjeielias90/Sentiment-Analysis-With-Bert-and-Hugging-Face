@@ -1,0 +1,24 @@
+Running:
+sudo docker run -d -p 5000:5000 sentiment-analyzer
+
+Check if our image is in fact running:
+sudo docker ps -a
+
+Check our logs:
+sudo docker logs containerID
+
+Building:
+sudo docker build -t adjeielias90/sentiment-analyzer .
+docker push adjeielias90/sentiment-analyzer:latest
+
+
+
+
+
+
+
+
+
+
+Get IP Address of a running container
+docker inspect containerID | grep IPAddress
